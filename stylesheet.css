@@ -3,7 +3,10 @@
     padding:0;
 }
 
-html { overflow-x:auto; overflow-y:scroll; }
+html { 
+    overflow-x:auto; overflow-y:scroll;
+    height:100%;
+}
 
 #main{
     width:auto;
@@ -46,15 +49,211 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    text-decoration:none;
     color:#67aeca;
 }
+
+li.selected a{
+    color:#67aeca;
+    text-decoration:none;
+}
+
+/*Homepage*/
 
 #mycontent p{
     text-align:center;
     font-family: 'Mukta', sans-serif;
     font-weight: 400;
     padding: 30px;
-    background-color:#F6F6F6;
+    background-color:#eeeeee;
     color:#42547c;
 }
+
+#images{
+    padding: 5px 0 25px 0;
+    display:flex;
+    flex-direction:column;
+    background-color:#406487;
+    align-items:center;
+}
+
+#mycontent #images div{
+       width: 90%;
+    }
+	
+img{
+    width:100%;
+    border-radius:5px;
+    margin-top:20px;
+    box-shadow: 0px 5px 24px -3px;
+}
+
+/*About Page*/
+#aboutcontent{
+    background-color:#eeeeee;
+	padding-bottom:500px;
+}
+
+h2{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    text-align:center;
+    padding:5px 0 5px 0;
+    color:#fff;
+    background:#67aeca; 
+    background: -webkit-linear-gradient(#67aeca, #406487); 
+    background: -o-linear-gradient(#67aeca, #406487); 
+    background: -moz-linear-gradient(#67aeca, #406487); 
+    background: linear-gradient(#67aeca, #406487); 
+}
+
+#aboutcontent #me ol, #aboutcontent #favorites ul{
+    margin: 20px 30px 8px 35px;
+}
+
+#aboutcontent #favorites ul{
+    margin-bottom:0;
+}
+
+#aboutcontent #me p{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    padding: 5px 0 5px 0;
+    background-color: #6598B5;
+    text-align:center;
+}
+
+#aboutcontent #me p a:hover{
+    text-decoration:none;
+}
+
+#aboutcontent #me ol li{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+}
+
+#aboutcontent #favorites ul li{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+}
+
+#aboutcontent #favorites ul{
+    padding-bottom: 20px;
+}
+
+/*Contact Page*/
+
+#form{
+    background-color:#406487;
+    display:flex;
+    justify-content:center;
+    border: 1px solid #67aeca;
+    padding: 20px 0 500px 0;
+}
+
+#form form{
+    margin: 0 auto;
+}
+
+#form form label{
+    color:#fff;  
+    display:inline-block;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300; 
+}
+
+#form input{
+    display:block;
+    margin: 0 5px 10px 0;
+}
+
+#form textarea{
+    margin-bottom: 10px;
+}
+
+
+/*Tablet/Desktop*/
+@media screen and (min-width:768px){
+/*Home Page*/	
+	nav{
+        height:400px;
+        display:flex;
+        align-items:flex-start;
+        justify-content:flex-end;
+        padding:0;
+    }
+
+    nav ul{
+        display:flex;
+        margin:10px 20px 0 0;
+    }
+
+    header{
+        position:relative;
+    }
+
+    header h1{
+        position:absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top:150px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.0);
+        font-size:44px;
+        padding:0;
+    }
+
+    #mycontent #images{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;;
+    }
+
+    #mycontent #images div{
+       width: 32%;
+    }
+
+    #mycontent #images img{
+        width:100%;
+    }
+
+/*About Page*/
+    h2{
+        text-align:left;
+        padding-left:20px;
+        background:#7099af;
+    }
+
+	#favorites{
+	    position:absolute;
+	    width:100%;
+		top:592px;
+	    bottom:0;
+	    background-color:#eeeeee;
+	}
+
+/*Contact Page*/
+	
+	#form{
+		position:absolute;
+		width:100%;
+		top:400px;
+		bottom:0;
+	}
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+

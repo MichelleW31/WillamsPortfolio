@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>My Awesome Site</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
 		<link rel="stylesheet" href="stylesheet.css">
 		<link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,700|Saira+Condensed:500,600,700" rel="stylesheet">
 	</head>
@@ -10,15 +10,23 @@
 		<div id="main">
 			<div id="header">
 				<header>
-					<h1>Michelle Williams</h1>
+					<h1>MICHELLE WILLIAMS</h1>
 					<nav>
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li class="selected"><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
+			</div>
+			<div id="form">
+				<form method="post" action="#">
+					<label>First Name: <input type ="text" name="firstname"></label>
+					<label>Last Name: <input type ="text" name="lastname"></label><br>
+					<textarea rows="7" cols="48" placeholder="Enter message here"></textarea>
+					<input type= "submit">
+				</form>
 			</div>
 		</div>
 	</body>
